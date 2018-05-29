@@ -3,12 +3,20 @@ $(document).ready(function(){
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 150) {
             $('.headertop').slideUp();
+            $('.arrow-top').show(); 
         }
+        
         else {
            $('.headertop').slideDown(); 
+           $('.arrow-top').hide();      
         }
     });
     
+    $('.arrow-top').on('click', function() {
+        $('html, body').animate({scrollTop: 0},500);
+        return false;
+    })
+
     $('.burger').on('click', function() {
         $('.headermainmenu').slideToggle();  
     })
