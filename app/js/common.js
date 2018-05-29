@@ -7,7 +7,12 @@ $(document).ready(function(){
         else {
            $('.headertop').slideDown(); 
         }
-                   })
+    });
+    
+    $('.burger').on('click', function() {
+        $('.headermainmenu').slideToggle();  
+    })
+    
     
   
 	var carousel = $("#carousel");
@@ -15,6 +20,8 @@ $(document).ready(function(){
 	carousel.owlCarousel({
     items:             2,
 	itemsDesktopSmall: [900, 1],
+    itemsTablet:       [600, 1],
+	itemsMobile:       false
     
     });
         

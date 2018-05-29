@@ -4,11 +4,35 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1768px)
+    .intro
+        min-height: 1628px
+        background-size: cover
+        background-position: 100% center
+        .introcaption
+            text-align: center
+            .introcaption__download
+                justify-content: center
 @media only screen and (max-width : 1200px)
     .headermainmenu
         display: none
+        position: absolute
+        top: 140px
+        left: 0
+        .nav
+            flex-direction: column
+            li
+                height: 50px
+                line-height: 50px
+                width: 100%
+                padding-left: 20px
+                background-color: #3e3e3e
+                border-bottom: 1px solid #2d2d2d
+                text-align: left
     .headernav__menu
         justify-content: flex-end
+    
 
 
 /* Medium Devices, Desktops */
@@ -18,7 +42,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.burger span.txt-menu
+        display: none
 
 
 /* Extra Small Devices, Phones */
