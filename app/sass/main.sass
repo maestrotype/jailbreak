@@ -64,9 +64,12 @@ ul
     
 
 .header
-    min-height: 165px
     width: 100%
     background-color: #3e3e3e
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
 .headertop
     padding-top: 15px
     background-color: #2d2d2d
@@ -191,7 +194,7 @@ ul
 
 .intro
     width: 100%
-    padding-top: 112px
+    padding-top: 312px
     padding-bottom: 140px
     background-image: url("../img/background.jpg")
     background-size: cover
@@ -382,6 +385,54 @@ ul
                 height: 254px
                 font-size: 14px
                 color: #b1c5cb
+.footer
+    min-height: 882px
+    height: 100%
+    width: 100%
+    background-image: url("../img/cloud.png")
+    background-size: cover
+    padding: 100px 0 138px
+    .footer__btn
+        text-align: center
+        margin: 0 auto 96px
+        .btn
+            display: inline-block
+            background-color: #ffd126
+            width: 414px
+            height: 100px
+            line-height: 100px
+            border-radius: 7px
+            color: #555
+            font-size: 44px
+            text-transform: uppercase
+            text-align: center
+    .footer__copyright
+        color: #005164
+        font-size: 18px
+        margin: 26px 0 60px
+    .footer__soc
+        width: 80%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: space-between
+        span
+            font-size: 26px
+            cursor: pointer
+            &:before
+                transition-duration: 0.4s
+            &:hover:before
+                color: #fff
+    .footernav__title
+        font-size: 25px
+        color: #fff
+    .footernav__link
+        display: block
+        margin: 30px 0
+        line-height: 1
+                
             
         
                     

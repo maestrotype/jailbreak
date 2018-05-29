@@ -1,42 +1,32 @@
 $(document).ready(function(){
-  // Находим блок карусели
-	var carousel = $("#carousel");
-
-	// Запускаем плагин карусели
-	carousel.owlCarousel({
     
-        items:             2,
-	
-	// 5 блоков на компьютерах (экран от 1400px до 901px)
-	itemsDesktop:      [1400, 2],
-	
-	// 3 блока на маленьких компьютерах (экран от 900px до 601px)
+    $(window).on('scroll', function() {
+        if($(window).scrollTop() > 150) {
+            $('.headertop').slideUp();
+        }
+        else {
+           $('.headertop').slideDown(); 
+        }
+                   })
+    
+  
+	var carousel = $("#carousel");
+    
+	carousel.owlCarousel({
+    items:             2,
 	itemsDesktopSmall: [900, 1],
-	
-	// 2 элемента на планшетах (экран от 600 до 480 пикселей)
-	itemsTablet:       [600, 1],
     
     });
-    
-    
-    
+        
     $('#js-prev').click(function () {
-
-	// Запускаем перемотку влево
 	carousel.trigger('owl.prev');
-
 	return false;
 });
 
 $('#js-next').click(function () {
-
-	// Запускаем перемотку вправо
 	carousel.trigger('owl.next');
-
 	return false;
-});
-    
-    
+}); 
     
     $(function(){
   $('#map').vectorMap({
