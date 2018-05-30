@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+    function setVideoFrame(){
+  document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/fKopy74weus?rel=0&amp;controls=0&amp;showinfo=0';
+}
+if (window.addEventListener)  // W3C DOM
+  window.addEventListener('load', setVideoFrame, false);
+else if (window.attachEvent) { // IE DOM
+  window.attachEvent('onload', setVideoFrame);
+}else{ //NO SUPPORT, lauching right now
+  setVideoFrame();
+}
     
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 150) {
