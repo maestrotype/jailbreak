@@ -27,8 +27,8 @@ $(document).ready(function(){
     
 	carousel.owlCarousel({
     items:             2,
-	itemsDesktopSmall: [900, 1],
-    itemsTablet:       [600, 1],
+	itemsDesktopSmall: [1200, 2],
+    itemsTablet:       [1000, 1],
 	itemsMobile:       false
     
     });
