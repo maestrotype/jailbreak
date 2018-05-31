@@ -169,7 +169,7 @@ $('#js-next').click(function () {
     $('.headertop__list').slideToggle();
   })
 
-  $('.headertop__link').on('click', function (event) {
+  $('.headertop__select .headertop__link').on('click', function (event) {
     event.preventDefault();
     var value = $(this).text();
     $('.headertop__select').text(value);
