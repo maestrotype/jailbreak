@@ -124,6 +124,8 @@ $('#js-next').click(function () {
     gets the video id we mentioned in the data-embed attribute
     to generate image thumbnail urls, youtube has several
     resolutions.
+    https://maestro83@bitbucket.org/codersgalaxy/jailbreakvpn-front.git
+    https://github.com/maestrotype/jailbreak.git
     - mqdefault 320 x 180
     - hqdefault 480 x 360
     - sddefault - 640 x 480
@@ -162,6 +164,17 @@ $('#js-next').click(function () {
   };
 
 })();
+
+  $('.headertop__select').on('click', function () {
+    $('.headertop__list').slideToggle();
+  })
+
+  $('.headertop__link').on('click', function (event) {
+    event.preventDefault();
+    var value = $(this).text();
+    $('.headertop__select').text(value);
+    $('.headertop__list').slideToggle();
+  })
 
 });
 
