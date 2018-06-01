@@ -19,7 +19,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
         'app/js/jquery-jvectormap-2.0.3.min.js',      
-        'app/js/jquery-jvectormap-world-merc.js',
+        'app/js/jquery-jvectormap-world-mill.js',
         'app/js/owl.carousel.min.js',
 		'app/js/common.js', // Всегда в конце
 		])

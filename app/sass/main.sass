@@ -50,6 +50,9 @@ a,a:hover
 ul
     list-style: none
 
+h1,h3,h5    
+    font-weight: 100
+
 .container-f
     height: 100%
     width: 100%
@@ -61,6 +64,12 @@ ul
     align-items: center
     justify-content: space-between
     padding: 15px 0
+
+.map 
+    height: 550px 
+.jvectormap-container      
+    height: 450px
+    padding: 70px 50px
 
 .headertop__list 
     position: absolute
@@ -296,13 +305,13 @@ ul
 .homepage
     padding-top: 132px
     .videohome
-        margin-bottom: 186px
+        margin: 20px 8px 186px
+        border: 15px solid #d9f2f8
     .benefithome
         margin-bottom: 210px
         h3
             color: #303030
             font-size: 47px
-            font-weight: bold
             text-align: center
             margin-bottom: 90px
         span
@@ -492,14 +501,18 @@ ul
         line-height: 1
 .footer-logo
     span
-        font-size: 30px
+        font-size: 22px
         color: #005164
+    sup
+        font-size: 12px
+        color: #005164    
 .arrow-top
     position: fixed
     left: 30px
     bottom: 30px
     cursor: pointer
     display: none
+    z-index: 1
     i
         font-size: 50px
 .youtube

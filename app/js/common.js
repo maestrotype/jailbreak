@@ -44,44 +44,29 @@ $('#js-next').click(function () {
 }); 
     
     $(function(){
+
+
   $('#map').vectorMap({
-    map: 'world_merc',
+    map: 'world_mill',
+    scaleColors: ['#C8EEFF', '#0071A4'],
     normalizeFunction: 'polynomial',
-    zoomButtons : false,
-    zoomOnScroll: false,
     hoverOpacity: 0.7,
     hoverColor: false,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: '#10b5dc',
+        stroke: '#10b5dc'
+      }
+    },
     markerStyle: {
       initial: {
         fill: '#d9f2f8',
         stroke: '#10849f'
-      },
-      hover: {
-        "fill-opacity": 0.8,
-        cursor: 'pointer',
-      },
+      }
     },
-    regionStyle :{
-      initial: {
-        fill: '#10b5dc',
-      }},
-      regionLabelStyle :{
-        initial: {
-          'font-family': 'Verdana',
-          'font-size': '12',
-          'font-weight': 'bold',
-          'color': 'red',
-          cursor: 'default',
-          fill: 'red',
-        },
-        hover: {
-          cursor: 'pointer',
-          'color': 'red',
-          fill: 'red',
-        },
-      },
-      backgroundColor: 'none',
-      markers: [
+    backgroundColor: '#d9f2f8',
+    markers: [
       {latLng: [41.90, 12.45], name: 'Vatican City'},
       {latLng: [43.73, 7.41], name: 'Monaco'},
       {latLng: [-0.52, 166.93], name: 'Nauru'},
@@ -108,10 +93,10 @@ $('#js-next').click(function () {
       {latLng: [-20.2, 57.5], name: 'Mauritius'},
       {latLng: [26.02, 50.55], name: 'Bahrain'},
       {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
-      ]
-    });
-});
+    ]
+  })
 
+});
     (function() {
 
   // get's all video wrapper divs
@@ -169,7 +154,7 @@ $('#js-next').click(function () {
     $('.headertop__list').slideToggle();
   })
 
-  $('.headertop__select .headertop__link').on('click', function (event) {
+  $('.headertop__list .headertop__link').on('click', function (event) {
     event.preventDefault();
     var value = $(this).text();
     $('.headertop__select').text(value);
