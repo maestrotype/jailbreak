@@ -51,7 +51,7 @@ ul
     list-style: none
 
 h1,h3,h5    
-    font-weight: 100
+    font-weight: 100  
 
 .container-f
     height: 100%
@@ -226,6 +226,7 @@ h1,h3,h5
           background-color: #fff 
           position: absolute
           top: 14px
+
         &:after
           content: ""
           display: inline-block
@@ -234,9 +235,21 @@ h1,h3,h5
           background-color: #fff
           position: absolute
           top: 26px
+          transition-duration: 0.4s
+          transition-delay: 0.1s
    span
        display: inline-block
        color: #fff
+.active-burger 
+    
+    .burger_line
+        height: 0
+        &:after 
+            transform: rotate(45deg)
+            top: 19px
+        &:before
+            top: 19px    
+            transform: rotate(-45deg)     
 
 .intro
     width: 100%
@@ -521,7 +534,6 @@ h1,h3,h5
         font-size: 50px
 .youtube
   background-color: #000
-  margin-bottom: 30px
   position: relative
   padding-top: 56.25%
   overflow: hidden
