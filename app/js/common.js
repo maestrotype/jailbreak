@@ -72,7 +72,7 @@ $('#js-next').click(function () {
         stroke: '#10849f'
       }
     },
-    backgroundColor: '#d9f2f8',
+    backgroundColor: 'transparent',
     markers: [
       {latLng: [52.50, 13.39], name: 'Berlin'},
         {latLng: [53.56, 10.00], name: 'Hamburg'},
